@@ -16,16 +16,16 @@ public class JaggeryContextListener implements ServletContextListener {
     private static final Log log = LogFactory.getLog(JaggeryContextListener.class);
 
     public void contextInitialized(ServletContextEvent servletContextEvent) {
-        /*ServletContext servletContext = servletContextEvent.getServletContext();
+        ServletContext servletContext = servletContextEvent.getServletContext();
         try {
             JaggeryAppConfigs.initialize(servletContext);
         } catch (JaggeryException e) {
             throw new RuntimeException("Error initializing Jaggery App : " + servletContext.getContextPath(), e);
         }
-        ServletRegistration.Dynamic registration = servletContext.addServlet(
+        /*ServletRegistration.Dynamic registration = servletContext.addServlet(
                 JaggeryAsyncServlet.NAME, JaggeryAsyncServlet.class);
         registration.setAsyncSupported(true);
-        registration.addMapping("*//*");*/
+        registration.addMapping("");*/
     }
 
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
